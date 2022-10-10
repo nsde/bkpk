@@ -9,10 +9,12 @@
         "**/.css": true,
         "**/.css.map": true,
         ".vscode": true,
-        "__pycache__": true
+        "__pycache__": true,
+        "bkpk/__pycache__": true
     },
     "hide-files.files": [
         ".vscode",
-        "__pycache__"
+        "__pycache__",
+        "bkpk/__pycache__"
     ]
 }

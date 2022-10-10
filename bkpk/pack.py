@@ -6,8 +6,6 @@ import pickle
 
 from models import *
 
-FILE_EXTENSION = '.bkpk'
-
 def build(origin: str) -> dict:
     """Returns an dictionary with all files from a given path."""
     result = {}

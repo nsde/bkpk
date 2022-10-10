@@ -4,8 +4,6 @@ import pickle
 
 from models import *
 
-FILE_EXTENSION = '.bkpk'
-
 def reconstruct(name: str, package: dict) -> dict:
     """Creates all files and folders from a root folder name and package dictionary."""
 
