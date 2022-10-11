@@ -1,12 +1,12 @@
 import sys
-import webbrowser
 import colorama
-
-import __init__
+import webbrowser
 
 from . import pack
 from . import unpack
 from . import helpers
+
+colorama.init(autoreset=True)
 
 def main():
     arg = sys.argv

@@ -1,5 +1,6 @@
 # https://github.com/pixegami/python-cli-template/blob/main/publish/setup.py
-DESCRIPTION = open('src/bkpk/__init__.py').read().split('\n')[1]
+# DESCRIPTION = open('src/bkpk/__init__.py').read().split('\n')[1]
+DESCRIPTION = 'A super simple and lightweight zip- and unzip tool.'
 
 import os
 import setuptools
@@ -17,7 +18,6 @@ if os.path.exists(reqtxt):
 
 else:
     print(f'WARN Requirements file {reqtxt} not found!')
-    print('No packages will be required on install.')
     requirement_packages = []
 
 setuptools.setup(
@@ -38,3 +38,5 @@ setuptools.setup(
         'setuptools==63.2.0'
     ],
 )
+
+print('BKPK Setup done.')

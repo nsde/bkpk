@@ -14,8 +14,7 @@
         "bkpk/bkpk.egg-info": true,
         "build": true,
         "src/bkpk/__pycache__": true,
-        "src/bkpk.egg-info": true,
-        "dist": true
+        "src/bkpk.egg-info": true
     },
     "hide-files.files": [
         ".vscode",
@@ -24,8 +23,7 @@
         "bkpk/bkpk.egg-info",
         "build",
         "src/bkpk/__pycache__",
-        "src/bkpk.egg-info",
-        "dist"
+        "src/bkpk.egg-info"
     ],
     "cSpell.words": [
         "bkpk"
