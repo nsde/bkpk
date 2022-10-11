@@ -4,13 +4,13 @@ import webbrowser
 
 from . import pack
 from . import unpack
+from . import models
 from . import helpers
 
 colorama.init(autoreset=True)
 
 def main():
     arg = sys.argv
-    print(arg)
 
     if len(arg) == 1:
         print(f'{colorama.Fore.BLUE}Welcome to Backpack (bkpk)!')
@@ -23,13 +23,9 @@ def main():
 
         sys.exit(0)
 
-    if arg[-1].endswith(helpers.FILE_EXTENSION):
+    if arg[-1].endswith(models.FILE_EXTENSION):
         unpack.load(arg[-1])
-        print(f'{colorama.Fore.GREEN}BKPK · Unpacking successful!')
+        print(f'{colorama.Fore.GREEN}🎒 Unpacking successful!')
     else:
         pack.save(arg[-1])
-        print(f'{colorama.Fore.GREEN}BKPK · Unpacking successful!')
-
-    print('BKPK · Done')
-
-main()
+        print(f'{colorama.Fore.GREEN}🎒 Packing successful!')

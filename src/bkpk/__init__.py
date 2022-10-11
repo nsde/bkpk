@@ -1,7 +1,8 @@
 """
 A super simple and lightweight zip- and unzip tool.
 """
-__version__ = '0.2.20'
+
+# Version can be found in setup.cfg
 
 from .pack import *
 from .unpack import *
