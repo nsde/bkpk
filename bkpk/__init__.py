@@ -1,17 +1,21 @@
-from pack import *
-from unpack import *
-from models import *
+from .pack import *
+from .unpack import *
+from .models import *
+
+from . import helpers
 
 # CLI
 import sys
-import helpers
+import colorama
 import webbrowser
+
+colorama.init(autoreset=True)
 
 arg = sys.argv
 print(arg)
 
 if len(arg) == 1:
-    print('Welcome to Backpack (bkpk)!')
+    print(f'{colorama.Fore.BLUE}Welcome to Backpack (bkpk)!')
 
     if helpers.query_yes_no('Do you need help? [y=yes|n=no]\nIf so, this project\'s documentation will be opened in a browser.', default='no'):
         webbrowser.open('https://github.com/nsde/bkpk/blob/master/README.md#commands')
@@ -23,8 +27,9 @@ if len(arg) == 1:
 
 if arg[-1].endswith(FILE_EXTENSION):
     load(arg[-1])
+    print(f'{colorama.Fore.GREEN}BKPK · Unpacking successful!')
 else:
     save(arg[-1])
-    print('BKPK · Successfully created ')
+    print(f'{colorama.Fore.GREEN}BKPK · Unpacking successful!')
 
 print('BKPK · Done')

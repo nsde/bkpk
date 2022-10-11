@@ -12,11 +12,20 @@ Please note that this won't create a shell command, so you need to write `python
 
 ## Commands
 ### Zipping a folder / Creating a backpack
-`bkpk example/`
+```
+bkpk example/
+```
 
-- This will create a `example.bkpk` in your current directory.
+This will create a `example.bkpk` in your current directory.
 
 ### Unzipping a backpack
-`bkpk example.bkpk`
+```
+bkpk example.bkpk
+```
 
-- This will create all directories and files which are stored in the backpack.
+This will create all directories and files which are stored in the backpack.
+
+## Python API
+```
+
+```

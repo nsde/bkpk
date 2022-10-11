@@ -1,1 +1,4 @@
-import __init__
+def main():
+    import __init__
+
+main()

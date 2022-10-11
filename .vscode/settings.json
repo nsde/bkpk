@@ -10,11 +10,20 @@
         "**/.css.map": true,
         ".vscode": true,
         "__pycache__": true,
-        "bkpk/__pycache__": true
+        "bkpk/__pycache__": true,
+        "bkpk/bkpk.egg-info": true,
+        "build": true,
+        "dist": true
     },
     "hide-files.files": [
         ".vscode",
         "__pycache__",
-        "bkpk/__pycache__"
+        "bkpk/__pycache__",
+        "bkpk/bkpk.egg-info",
+        "build",
+        "dist"
+    ],
+    "cSpell.words": [
+        "bkpk"
     ]
 }

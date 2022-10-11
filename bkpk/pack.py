@@ -4,8 +4,6 @@ import sys
 import glob
 import pickle
 
-from models import *
-
 def build(origin: str) -> dict:
     """Returns an dictionary with all files from a given path."""
     result = {}
