@@ -2,7 +2,16 @@
 A super simple and lightweight zip alternative. No encryption, compression or anything, just a simple file packer and unpacker using the Python builtin `pickle`. Supports files of pretty much any type.
 
 ## Installation
-### Manual
+### Pip (recommended)
+```
+pip install bkpk
+```
+or
+```
+python -m pip install bkpk
+```
+
+### Manual (advanced users only)
 ```
 git clone https://github.com/nsde/bkpk.git
 python bkpk 
@@ -26,6 +35,10 @@ bkpk example.bkpk
 This will create all directories and files which are stored in the backpack.
 
 ## Python API
-```
+```py
+import bkpk
+
+bkpk.save('example/')
+bkpk.load('example.bkpk')
 
 ```

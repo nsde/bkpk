@@ -13,6 +13,8 @@
         "bkpk/__pycache__": true,
         "bkpk/bkpk.egg-info": true,
         "build": true,
+        "src/bkpk/__pycache__": true,
+        "src/bkpk.egg-info": true,
         "dist": true
     },
     "hide-files.files": [
@@ -21,6 +23,8 @@
         "bkpk/__pycache__",
         "bkpk/bkpk.egg-info",
         "build",
+        "src/bkpk/__pycache__",
+        "src/bkpk.egg-info",
         "dist"
     ],
     "cSpell.words": [

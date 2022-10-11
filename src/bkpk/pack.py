@@ -4,6 +4,8 @@ import sys
 import glob
 import pickle
 
+from . import models
+
 def build(origin: str) -> dict:
     """Returns an dictionary with all files from a given path."""
     result = {}
@@ -11,7 +13,7 @@ def build(origin: str) -> dict:
     for path in glob.iglob(origin + '**', recursive=True):
         try:
             with open(path, 'rb') as f: content = f.read()
-        except IsADirectoryError: content = Directory
+        except IsADirectoryError: content = models.Directory
 
         path = path.replace(origin, '')
 
@@ -27,7 +29,7 @@ def save(origin: str):
 
     result = build(origin)
     
-    target = origin[:-1].split('/')[-1] + FILE_EXTENSION
+    target = origin[:-1].split('/')[-1] + models.FILE_EXTENSION
 
     with open(target, 'wb') as fp:
         pickle.dump(result, fp)
